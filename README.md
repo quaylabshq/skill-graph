@@ -2,7 +2,7 @@
 
 A collection of [Claude skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) built as **skill graphs** — modular, interlinked reference architectures instead of monolithic instruction files.
 
-![cover](https://github.com/user-attachments/assets/45880f08-4feb-491d-ab3b-6d9f05b1de27)
+<img width="2400" height="960" alt="cover-52" src="https://github.com/user-attachments/assets/d5ee5536-adf3-4a01-9f7d-4a6798dc6769" />
 
 ## Why skill graphs?
 
