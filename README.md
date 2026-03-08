@@ -1,6 +1,6 @@
 # Skill Graph
 
-A collection of [Claude skills](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/skills) built as **skill graphs** — modular, interlinked reference architectures instead of monolithic instruction files.
+A collection of [Claude skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) built as **skill graphs** — modular, interlinked reference architectures instead of monolithic instruction files.
 
 ![cover](https://github.com/user-attachments/assets/45880f08-4feb-491d-ab3b-6d9f05b1de27)
 
