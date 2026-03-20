@@ -28,12 +28,33 @@ At each step, scan for:
 2. **Present the options** — "Option A: hook into the middleware. Option B: add a new route handler."
 3. **Ask for direction** — "Which approach aligns better with your architecture preferences?"
 
+## Conflicting Requirements Detection
+
+Actively scan for requirement tensions at every step. Requirements that individually sound reasonable can be mutually exclusive or create impossible trade-offs.
+
+| Conflict Pattern | Example | Resolution Approach |
+|------------------|---------|---------------------|
+| Speed vs. thoroughness | "Fast response" + "comprehensive analysis" | Ask user to prioritize; define thresholds for both |
+| Simplicity vs. completeness | "Simple API" + "handle all edge cases" | Ask which edge cases are critical vs. nice-to-have |
+| Security vs. usability | "Seamless login" + "maximum security" | Define acceptable trade-off; cite industry standards |
+| Scope vs. quality | "Ship everything" + "zero bugs" | Ask for MVP scope; define quality bar per feature |
+| Compatibility vs. modernization | "Support legacy" + "use modern stack" | Define compatibility boundary; identify migration path |
+| Cost vs. reliability | "Minimal infrastructure" + "99.99% uptime" | Present cost/reliability curve; ask for target |
+
+When a conflict is detected:
+
+1. **State both requirements explicitly** — "You mentioned X and also Y"
+2. **Explain why they conflict** — "These pull in opposite directions because..."
+3. **Present 2-3 resolution options** with concrete trade-offs
+4. **Ask the user to choose** — never silently resolve a conflict by favoring one requirement over another
+
 ## Rules
 
 1. Never proceed with significant uncertainty — ask first
 2. Frame questions with context about why you're asking
 3. Keep mid-process questions focused and specific
 4. One topic per question — don't bundle ambiguities
+5. **Never silently resolve conflicting requirements** — always surface the conflict and let the user decide
 
 ## Back to
 

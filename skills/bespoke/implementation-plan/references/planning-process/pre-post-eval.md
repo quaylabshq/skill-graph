@@ -41,8 +41,9 @@ After completing a step, evaluate:
 | 1 Clarification | "Am I asking the right questions for this domain?" | "Do I genuinely understand the requirements?" |
 | 2 Research | "Am I researching the right things?" | "Did research confirm or change my understanding?" |
 | 3 Decompose | "Is this the right granularity for breakdown?" | "Does the decomposition cover everything?" |
-| 4 Generate Plan | "Am I structuring the plan correctly for this domain?" | "Does the plan address all requirements?" |
-| 5 Present | "Is the plan ready for the user?" | "Was the feedback incorporated?" |
+| 4 Generate Plan | "Am I structuring the plan correctly for this domain? Does it meet the quality doctrine?" | "Does the plan address all requirements? Would this survive a Google/NASA design review?" |
+| 4.5 Verification | "Are all verification agents configured correctly for this domain? Is the agent panel complete?" | "Did all agents reach consensus? Were all Critical/Major issues resolved? Is the verification report complete?" |
+| 5 Present | "Is the plan ready for the user? Is the verification report attached?" | "Was the feedback incorporated?" |
 
 ## Anti-Patterns
 
