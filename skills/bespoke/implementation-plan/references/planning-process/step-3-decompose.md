@@ -20,6 +20,46 @@ A subtask is atomic when:
 - It can be verified independently
 - Further splitting would produce fragments too small to be actionable
 
+## Criteria-First Decomposition
+
+When a subtask is determined to be atomic, **immediately define its acceptance criteria** — BEFORE recording it as a plan step. The decomposition output is not a list of tasks. It is a list of (task, criteria) pairs.
+
+This is the [goal-driven methodology](../goal-driven-methodology/overview.md) applied at the decomposition level. The "test" is defined before the "code."
+
+### Process
+
+For each atomic subtask:
+
+1. Ask: "What must be true when this subtask is done?"
+2. Write 2-5 specific, observable acceptance criteria
+3. For code tasks: express criteria as test specifications (see [technical TDD](../goal-driven-methodology/technical-tdd.md))
+4. For non-code tasks: express criteria using domain-appropriate frameworks (see [non-technical criteria](../goal-driven-methodology/non-technical-criteria.md))
+5. Only THEN record the subtask with its criteria
+
+If you cannot define clear criteria for a subtask, the subtask is too vague — either decompose further or return to [clarification](step-1-clarification.md).
+
+### Decomposition Output Format
+
+```
+Subtask: [name]
+Criteria:
+  - [criterion 1 — observable, specific]
+  - [criterion 2]
+  - [criterion 3]
+Dependencies: [other subtasks this depends on]
+```
+
+This output feeds directly into [Step 4 (Generate Plan)](step-4-generate-plan.md), where each subtask becomes a plan step with its criteria already defined.
+
+## Scope Creep Detection
+
+During decomposition, actively monitor for scope expansion:
+
+1. **Count subtasks** — if decomposition produces more than 15 atomic subtasks for a task classified as "moderate," pause and question whether scope has expanded
+2. **Check origins** — every subtask must trace back to a user requirement or research finding. If a subtask exists "because it would be nice," it is scope creep
+3. **Compare to clarification** — review the scope boundaries agreed in Step 1. Does the decomposition stay within them?
+4. **Flag and ask** — if scope expansion is detected, do not silently include it. Surface it to the user: "During decomposition, I identified [X] which wasn't in the original scope. Should I include it?"
+
 ## Complexity Assessment
 
 Count the depth of decomposition:
@@ -57,8 +97,11 @@ Express dependencies as: "Task B depends on Task A" — this drives the ordering
 2. The decomposition drives the plan's step organization
 3. If decomposition reveals unclear requirements, return to [step 1](step-1-clarification.md)
 4. Do not over-decompose — stop when subtasks are actionable single steps
+5. **Every atomic subtask must have acceptance criteria** — no subtask is recorded without them
+6. **Monitor for scope creep** — every subtask must trace to a requirement or research finding
 
 ## Back to
 
 - [Planning process overview](overview.md)
+- See also: [Goal-driven methodology](../goal-driven-methodology/overview.md) — criteria-first planning
 - See also: [Output format — core template](../output-format/core-template.md) — how decomposed tasks map to plan structure

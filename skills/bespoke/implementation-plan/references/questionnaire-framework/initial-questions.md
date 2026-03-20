@@ -12,6 +12,19 @@ Before asking any questions, classify the task using [domain-classification.md](
 
 ## Question Categories
 
+### 0. Problem Validation
+
+Is this the right problem to solve? Should we be doing this at all?
+
+Thinking triggers:
+- Is the stated problem the actual problem, or a symptom of something deeper?
+- Has this been attempted before? What happened?
+- What happens if we do nothing?
+- Is the user solving the right problem at the right level of abstraction?
+- Are there simpler alternatives that achieve the same underlying goal?
+
+**This category is always probed first** — before scope, before constraints, before anything else. If the problem itself is wrong, nothing downstream matters. Even one question from this category ("What happens if we don't do this?") can save an entire planning cycle.
+
 ### 1. Scope & Boundaries
 
 What is included? What is excluded? Where does this task end?
@@ -87,11 +100,12 @@ Thinking triggers:
 ## How to Apply
 
 1. Classify the domain first
-2. Scan all eight categories
-3. Weight by domain profile — subjective domains probe 7, 4, 1 deepest; technical domains probe 2, 5, 6 deepest
-4. Formulate 3–5 specific questions targeting highest-uncertainty, highest-weight areas
-5. Ask those first, then follow up based on answers
-6. Repeat until all categories have sufficient clarity
+2. **Always start with category 0 (Problem Validation)** — at least one question challenging the premise
+3. Scan all nine categories
+4. Weight by domain profile — subjective domains probe 7, 4, 1 deepest; technical domains probe 2, 5, 6 deepest
+5. Formulate 3–5 specific questions targeting highest-uncertainty, highest-weight areas
+6. Ask those first, then follow up based on answers
+7. Repeat until all categories have sufficient clarity
 
 ## Back to
 

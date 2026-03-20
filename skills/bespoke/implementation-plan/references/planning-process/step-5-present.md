@@ -8,9 +8,10 @@ Present the completed plan to the user and wait for explicit approval before any
 
 1. **Lead with a brief summary** — 2-3 sentences covering what the plan achieves and the approach
 2. **Show the full plan** using the output format (core template + adaptive sections)
-3. **Highlight key decisions** — explicitly call out choices you made and why
-4. **Flag risks and uncertainties** — anything that might change during implementation
-5. **Ask for explicit approval** — "Does this plan look right? Should I adjust anything before proceeding?"
+3. **Include the verification report** — from [step 4.5](step-4.5-verification.md), showing which agents verified the plan, their verdicts, and any residual minor issues
+4. **Highlight key decisions** — explicitly call out choices you made and why
+5. **Flag risks and uncertainties** — anything that might change during implementation
+6. **Ask for explicit approval** — "Does this plan look right? Should I adjust anything before proceeding?"
 
 ## Handling Feedback
 

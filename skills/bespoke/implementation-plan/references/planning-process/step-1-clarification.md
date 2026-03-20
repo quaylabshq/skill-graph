@@ -22,12 +22,15 @@ Questions are not limited to step 1. They can and should happen at any point.
 Apply [domain classification](domain-classification.md) first, then the [questionnaire framework](../questionnaire-framework/overview.md):
 
 1. Classify the domain — determine the subjectivity, technical depth, scope, novelty, and codebase relevance
-2. For high-subjectivity domains: ask for examples, references, preferences BEFORE technical questions
-3. Start with scope and boundaries — what is in and out of scope
-4. Identify constraints — what tools, languages, platforms, existing patterns are involved
-5. Understand quality requirements — what level of detail, correctness, coverage
-6. Probe for implicit requirements — what the user assumes but hasn't stated
-7. Challenge your own assumptions — what do you think you know that might be wrong
+2. **Validate the problem first** — ask at least one question challenging the premise: "Is this the right problem? What happens if we don't do this?" (see [initial questions — category 0](../questionnaire-framework/initial-questions.md))
+3. For high-subjectivity domains: ask for examples, references, preferences BEFORE technical questions
+4. Start with scope and boundaries — what is in and out of scope
+5. **Uncover success criteria** — for every requirement, ask "how will you know this is done?" This feeds the [goal-driven methodology](../goal-driven-methodology/overview.md).
+6. Identify constraints — what tools, languages, platforms, existing patterns are involved
+7. Understand quality requirements — what level of detail, correctness, coverage
+8. Probe for implicit requirements — what the user assumes but hasn't stated
+9. Challenge your own assumptions — what do you think you know that might be wrong
+10. **Detect conflicting requirements** — see [mid-process questions](../questionnaire-framework/mid-process-questions.md)
 
 ## Rules
 
